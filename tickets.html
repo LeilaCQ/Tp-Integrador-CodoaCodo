@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Integrador Codo a Codo</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Inserto CSS -->
+  <link rel="stylesheet" href="mystyle.css">
+
+  <!-- Instalacion boostrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  
+</head>
+<body>
+    <!-- Inserto Navbar superior encabezado -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container header">
+          <a class="navbar-brand" href="index.html"><img src="imagenes/codoacodo.png" alt="CodoaCodo" width="150rem" height="80rem">Conf Bs As</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+        </div>
+        
+         <div class="container">
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">La conferencia</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Los oradores</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">El lugar y la fecha</a>
+              </li>
+              <li  class="nav-item">
+                <a class="nav-link" href="#">Conviértete en orador</a>
+              </li>
+              <li class="nav-item">
+                <a  id="comprartickets" class="nav-link" href="#">Comprar tickets</a>
+              </li>
+              </ul>
+          </div>
+        </div> 
+      </nav>
+  
+    </header>
+     <!--Inserto cards --->
+    <div class="container">
+        <br>
+        <div class="card-deck">
+
+            <!--Inserto card estudiante --->
+            <div class="card  bg-transparent border-primary" style="border-width: 3px;" >
+              <div class="card-body text-center">
+                <h4 class="card-title"><b>Estudiante</b></h4>
+                <p class="card-text">Tiene un descuento</p>
+                <br>
+                  <h5 class="card-title" style="font-weight: bold; ">80%</h5>
+                <br>
+                <p class="card-text"><large class="text-muted">*presentar documentación</large></p>
+              </div>
+            </div>
+
+            <!--Inserto card trainee --->
+            <div class="card bg-transparent border-info" style="border-width: 3px;">
+              <div class="card-body text-center">
+                <h4 class="card-title"><b>Trainee</b></h4>
+                <p class="card-text">Tiene un descuento</p>
+                <br>
+                    <h5 class="card-title" style="font-weight: bold;">50%</h5>
+                <br>
+                <p class="card-text"><large class="text-muted">*presentar documentación</large></p>
+              </div>
+            </div>
+
+            <!--Inserto card junior --->
+            <div class="card bg-transparent border-warning"style="border-width: 3px;">
+              <div class="card-body text-center">
+                <h4 class="card-title"><b>Junior</b></h4>
+                <p class="card-text">Tiene un descuento</p>
+                <br>
+                    <h5 class="card-title" style="font-weight: bold;">80%</h5>
+                <br>
+                <p class="card-text"><large class="text-muted">*presentar documentación</large></p>
+              </div>
+            </div>
+         
+        </div>
+    </div>
+
+      <!--Inserto formulario --->
+    <br>
+
+        <div class="text-center">
+            <h5  style="font-size:small;">VENTA</h5>
+            <h2>VALOR DE TICKET $200</h2>
+        </div>
+    <br>
+    <div class="container">
+        <form >
+            <div class="row" style="justify-content: center;">
+                <div class="col-4">
+                    <input type="text" class="form-control" placeholder="Nombre">
+                </div>
+                <div class="col-4">
+                    <input type="text" class="form-control" placeholder="Apellido">
+                </div>
+            </div>
+            
+            <br>
+
+            <div class="row" style="justify-content: center;">
+                <div class="col-8">
+                    <input type="text" class="form-control" placeholder="Correo">
+                </div>
+
+            </div>
+
+            <br>
+
+            <div class="row" style="justify-content: center;">
+                <div class="col-4">
+                    <label for="inputcantidad">Cantidad</label>
+
+                    <input id="cntEntradas" type="number" class="form-control" placeholder="Cantidad">
+                </div>
+                <div class="col-4">
+                    <label for="inputcategoria">Categoria</label>
+
+                    <select id="inputState" class="form-control">
+                        <option selected value="80" >Estudiante</option>
+                        <option value="50">Trainee</option>
+                        <option value="15">Junior</option>
+                    </select>
+                </div>
+            </div>
+                <br>
+            <div class="row" style="justify-content: center;">
+                <div class="col-8">
+                    <div  id="compratotal" class="alert alert-primary" role="alert">
+                        Total a pagar : $
+                    </div>
+                </div>
+
+            </div>
+            <div class="row" style="justify-content: center;">
+                <div class="col-4">
+                    <button type="reset" class="btn btn-primary btn-lg btn-block" style="background-color: #96c93e;border: none;"> Borrar </button>
+                </div>
+                <div class="col-4">
+                    <button type="button" id="botonCalcular" class="btn btn-primary btn-lg btn-block" style="background-color: #96c93e; border: none;"> Resumen </button>
+                </div>
+            </div> 
+
+        </form>
+    </div>
+    
+    <br>
+
+    <!--Inserto footer --->
+
+  <footer>
+    
+    <div class="navbar navbar-expand-md nav-justified justify-content-around" id="footer">
+      <ul class="navbar-nav container">
+          <li class="nav-item">
+              <a class="nav-link text-white" href="#">Preguntas frecuentes</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link text-white" href="#">Contáctanos</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link text-white" href="#">Prensa</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link text-white" href="#">Conferencia</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link text-white" href="#">Términos y condiciones</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link text-white" href="#">Privacidad</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link text-white" href="#">Estudiantes</a>
+          </li>
+      </ul>
+  </div>
+</footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="compra.js"></script>
+</body>
+</html>

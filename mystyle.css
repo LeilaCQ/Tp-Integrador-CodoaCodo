@@ -1,0 +1,58 @@
+nav .header{
+    margin-left: 5em;
+} 
+
+#comprartickets{
+    color: #26a844 !important;
+}
+#texto_ba1
+{
+    text-align: end;
+    padding-left: 25em;
+    padding-bottom: 11em;   
+}
+.oscurecer
+{
+    filter:brightness(0.6);
+    
+}
+#boton {
+
+    padding: 2px;
+    font-size: smaller;
+    font-weight: bold;
+}
+
+#btnegocios {
+
+    padding: 2px;
+    font-size: smaller;
+    font-weight: bold;
+}
+
+#btnstart {
+
+    padding: 2px;
+    font-size: smaller;
+    font-weight: bold;
+}
+#fondocard
+{
+    padding-bottom: 234px;
+
+}
+
+#enviar
+{
+    background-color: #96c93e;
+    border: none;
+}
+
+#footer
+{
+    background-color: #053f61;
+}
+
+
+
+
